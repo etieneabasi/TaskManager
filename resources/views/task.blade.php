@@ -63,10 +63,8 @@ Task
                     <td class="pt-4" width="40%">
                       
                       <button type="button" data-cat-id="{{$cat->id}}" data-cat-name="{{$cat->name}}"  class=" btn btn-success btn-sm " data-toggle="modal" data-target="#exampleModal">Edit</button>                                           
-                      <form class="d-inline" action="{{route('cat.destroy', $cat->id)}}" method="get">
-                       @csrf
-                       <button type="submit" class="btn btn-danger btn-sm">Delete</button></td>
-                     </form>
+  
+                       <a href="{{route('cat.destroy', $cat->id)}}" type="submit" class="btn btn-danger btn-sm">Delete</a></td>
                    </td>
                  </tr>
                  @endforeach
@@ -149,10 +147,7 @@ Task
                 
                      <td class="pt-4" width="40%">
                       <button type="button" data-task-id="{{$array->id}}" data-task-name="{{$array->name}}"  class=" btn btn-success btn-sm " data-toggle="modal" data-target="#exampleModalCenter">Edit</button>                                           
-                      <form class="d-inline" action="{{route('tasks.destroy', $array->id)}}" method="get">
-                       @csrf
-                       <button type="submit" class="btn btn-danger btn-sm">Delete</button></td>
-                     </form>
+                       <a href="{{route('tasks.destroy', $array->id)}}" type="submit" class="btn btn-danger btn-sm">Delete</a></td>
                    
                    </tr>
                    @endforeach

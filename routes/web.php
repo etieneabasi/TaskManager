@@ -23,7 +23,7 @@ Route::post('task/update/{id}','CategoryController@update')->name("category.upda
 
 // Route::resource('task','CategoryController');
 Route::get('category/delete/{id}','CategoryController@destroy')->name("cat.destroy");
-Route::post('task/delete/{id}','TaskController@destroy')->name("tasks.destroy");
+Route::get('task/delete/{id}','TaskController@destroy')->name("tasks.destroy");
 
 // new  route work
 // Route::get('task','TaskController@indexT')->name("home.index");

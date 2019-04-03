@@ -162,7 +162,7 @@ class TaskController extends Controller
             $task = Task::find($id);
             $task-> delete();
             Alert::Success('Success Message','Task Deleted Successfully');
-            return;
+            return back();
         
     }
 
